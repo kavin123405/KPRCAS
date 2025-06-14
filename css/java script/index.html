@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">java script</h1>
+    <button onclick="handlebuttonclicked()">click</button>
+    <br><br>
+    <input type="text" id="name" placeholder="enter the name">
+    <button onclick="addname()">add name</button>
+    <ol id="list">
+
+    </ol>
+    <script>
+        function addname(){
+            const name=document.getElementById("name").value
+            const li=document.createElement("li");
+            li.innerText=name;
+            document.getElementById("list").append(li)
+        }
+        function handlebuttonclicked(){
+            console.log("buttonclicked");
+            const result=document.querySelector("#text")
+            result.innerHTML=result.innerHTML==="hello kprcas"?"hello world":"hello kprcas"
+            result.style.color="red";
+            result.style.fontsize="20px";
+        }
+    </script>
+</body>
+</html>

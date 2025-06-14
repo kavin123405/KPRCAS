@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        header{
+            display: flex;
+            background-color: darkblue;
+        }
+        h1{
+            margin: 0;
+            color: fuchsia;
+        }
+        nav{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            justify-content: end;
+        }
+        li{
+            display: inline-flex;
+            margin-right: 20px;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: darkgreen;
+            color: whitesmoke;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header style="position: sticky;top: 0;">
+        <h1>header</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">home</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#skills">skills</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section style="position:relative;top: 50px;left: 50px;height: 500px;border: 1px solid green;" id="skills">
+        <div>skills</div>
+        
+    </section>
+    <section style="height: 500px;position: absolute;top: 50px;left: 20px;" id="contact">
+        <div>contact</div>
+    </section>
+    <footer>
+        <div>footer</div>
+    </footer>
+</body>
+</html>
